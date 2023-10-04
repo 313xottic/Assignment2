@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Guessing Game</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="tophead" >
+                <center><h1 style="margin: 0%;">Guess The Character From An Anime</h1></center>
+            </div>
+        </div> 
+
+        <div class="container">
+            <div class="main">
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/hair.png';"/></div>
+                <div class="section2"><img class="que1" src="assets/question.png" onclick = "this.src = 'assets/jjklogo.png';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/gojoglasses.jpg';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/eye.png';"/></div>
+                <div class="section1" style="background-color: rgba(255, 230, 0, 0.8);"><img class="que1" style="height: 100%;" src="assets/question.png"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/school.png';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/seal.png';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/dme.png';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/ban.png';"/></div>
+                <div class="section3"><img class="que1" src="assets/question.png" onclick = "this.src = 'assets/hp.jpg';"/></div>
+                <div><img class="que" src="assets/question.png" onclick = "this.src = 'assets/grade.png';"/></div>
+            </div>
+        </div>
+            
+        <script>
+            // Get all images with class name 'que', 'que1', 'section2', and 'section3'
+            var images = document.querySelectorAll('.que, .que1, .section2, .section3');
+
+            // Add an event listener to each image
+            images.forEach(function(image) {
+                image.addEventListener('load', function() {
+                    // Check if all images have changed from 'question.png'
+                    if (document.querySelectorAll('[src="assets/question.png"]').length === 1) {
+                    // Add onclick attribute to image under class name 'section3'
+                    document.querySelector('.section1 img').setAttribute('onclick', "this.src = 'assets/gojo.png';");
+                }
+            });
+        });
+        </script>
+            
+    </body>
+
+</html>

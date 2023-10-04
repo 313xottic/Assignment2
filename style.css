@@ -1,0 +1,95 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin:0%;
+    overscroll-behavior: none;
+    background-image: url('assets/jjkbg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: rgb(117, 87, 87);
+}
+
+.section2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.section3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.tophead {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.500);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 5px black;
+    margin: 20px 20px 20px 20px  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    min-width: fixed;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.500);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 5px black;
+    margin: 0px 20px 20px 20px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.main > div  {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.que {
+    box-shadow: 0px 0px 8px 5px black;
+    height: 100%; 
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.que:hover {
+    transform: scale(1.1); /* Increase the size to 120% when hovered */
+    transition: transform 0.3s ease-in-out; /* Animation effect */
+}
+
+.que1 {
+    box-shadow: 0px 0px 8px 5px black;
+    height: 100%; 
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.que1:hover {
+    transform: scale(1.1); /* Increase the size to 120% when hovered */
+    transition: transform 0.3s ease-in-out; /* Animation effect */
+}
